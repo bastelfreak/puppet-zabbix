@@ -173,6 +173,7 @@ class zabbix (
   $loadmodulepath                           = $zabbix::params::server_loadmodulepath,
   $loadmodule                               = $zabbix::params::server_loadmodule,
   Boolean $manage_selinux                   = $zabbix::params::manage_selinux,
+  Optional[String[1]] $zabbix_user          = $zabbix::params::server_zabbix_user,
 ) inherits zabbix::params {
   class { '::zabbix::web':
     zabbix_url                               => $zabbix_url,
