@@ -59,7 +59,7 @@ group :system_tests do
   gem 'beaker-module_install_helper',  :require => false
   gem 'beaker-puppet_install_helper',  :require => false
   gem 'master_manipulator',            :require => false
-  gem 'beaker', :git => 'https://github.com/puppetlabs/beaker.git'
+  gem 'beaker', :git => 'https://github.com/bastelfreak/beaker.git', :branch => 'archlinux'
 end
 
 
